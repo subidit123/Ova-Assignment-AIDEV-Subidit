@@ -13,7 +13,7 @@ chatStr = ""
 def chat(query):
     global chatStr
     print(chatStr)
-    apikey="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"
+    apikey=""
     openai.api_key = apikey
     chatStr += f"Subidit: {query}\n Jarvis: "
     response = openai.Completion.create(
@@ -33,7 +33,7 @@ def chat(query):
 
 def ai(prompt):
     openai.api_key = apikey
-    apikey="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"
+    apikey=""
     text = f"OpenAI response for Prompt: {prompt} \n *************************\n\n"
 
     response = openai.Completion.create(
